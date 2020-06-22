@@ -1,0 +1,21 @@
+{
+  "locale": [
+    "en"
+  ],
+  "storage": false,
+  "service": "FINANCE",
+  "whiteListedDomains": [],
+  "type": "personal",
+  "modules": {
+    "widgets": [
+      {
+        "location":"invoice.creation.sidebar",
+        "name":"Invoice Creation",
+        "url":"/app/widget.html",
+        "logo": "/app/image/logo.png"
+      }
+    ]
+  },
+  "connectors": [],
+  "config": []
+}

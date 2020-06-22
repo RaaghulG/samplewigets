@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Invoice Creation</title>
+  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://js.zohostatic.com/zohofinance/v1/zf_sdk.js"></script>
+    <style>
+      .list-wrapper {
+        background: #f4f5f7;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        width: 150%;
+       
+      }
+      .list-card {
+		    background-color: #fff;
+		    border-bottom: 1px solid #ccc;
+		    border-radius: 3px;
+		    cursor: pointer;
+		    display: block;
+		    margin: 6px;
+		    min-height: 20px;
+		    text-decoration: none;
+		    z-index: 0;
+		}
+    .text-overflow {
+			white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+		}
+    table,th,td{
+      border-collapse: collapse;
+      border: 2px solid gray;
+      padding: 10px;
+      width: max-content;
+    }
+    th,td{
+      text-align: center;
+      vertical-align: middle;
+    }
+    tr:hover{
+      background-color: aqua;
+    }
+    </style>
+  <body>
+    <div id="App">
+      <div class="list-wrapper">
+        <div style="margin: 10px 10px 20px;" class="clearfix"> 
+
+          <h5 style="font-size:1rem;" id="contact">
+            
+          </h5>
+
+          <button class="btn btn-sm btn-primary float-right" onclick="addToInvoice" style="padding: 5px 12px;line-height: 11px;font-size: 11px;">
+            Add to Invoice
+          </button>
+
+        </div>
+      </div> 
+      <table>
+        
+      </table>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  </html>
